@@ -1,8 +1,8 @@
 <?php
-$servername = "ducmanh96.mysql.database.azure.com";
-$username = "socialapp";
-$password = "Manh30091996";
-$dbname = "SNSApp";
+$servername = getenv('DB_SERVER');
+$username = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
+$dbname = getenv('DB_NAME');
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
