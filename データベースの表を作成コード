@@ -3,7 +3,7 @@
 データベースの名前 = "SNSApp"
 
 TABLE Users
- CREATE TABLE Users (
+CREATE TABLE Users (
     UserID INT PRIMARY KEY AUTO_INCREMENT,
     Username VARCHAR(255) UNIQUE NOT NULL,
     Password VARCHAR(255) NOT NULL,
@@ -12,7 +12,8 @@ TABLE Users
 );
 
 
-TABLE Posts  CREATE TABLE Posts (
+TABLE Posts 
+CREATE TABLE Posts (
     PostID INT PRIMARY KEY AUTO_INCREMENT,
     UserID INT,
     Caption TEXT,
